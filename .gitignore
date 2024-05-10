@@ -1,0 +1,15 @@
+# Byte-compiled
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# Suno-Downloads
+downloads/
+
+# Desktop Services Store
+.DS_Store
+
+# Python venv
+.venv

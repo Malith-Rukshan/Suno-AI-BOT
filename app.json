@@ -1,0 +1,24 @@
+{
+    "name": "Suno-AI-BOT",
+    "description": "A Telegram BOT for interacting with Suno AI's music generator by SunoAI API.",
+    "repository": "https://github.com/Malith-Rukshan/Suno-AI-BOT",
+    "keywords": [
+        "ai music",
+        "suno ai",
+        "telegram bot",
+        "suno ai bot"
+    ],
+    "env": {
+        "SUNO_COOKIE": {
+            "description": "Sign up on the suno.ai website and obtain your cookie. Refer README.md file to tutorial."
+        },
+        "BOT_TOKEN": {
+            "description": "Obtain one from [BotFather](https://t.me/botfather)"
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}

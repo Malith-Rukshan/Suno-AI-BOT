@@ -115,7 +115,8 @@ async def onMessage(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                     file_path = await asyncio.to_thread(client.download,song=song)
                     await context.bot.send_audio(chat_id=chat_id, audio=open(file_path, 'rb'), thumbnail=open("thumb.jpg", 'rb'))
                     os.remove(file_path)
-                del chat_states[chat_id]
+                if chat_id in chat_states:
+                    chat_states.pop(chat_id, None)
             except Exception as e:
                 await update.message.reply_text(f"⁉️ Failed to generate music: {e}")
         else:
@@ -135,12 +136,13 @@ async def onMessage(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
                     file_path = await asyncio.to_thread(client.download,song=song)
                     await context.bot.send_audio(chat_id=chat_id, audio=open(file_path, 'rb'), thumbnail=open("thumb.jpg", 'rb'))
                     os.remove(file_path)
-                del chat_states[chat_id]
+                if chat_id in chat_states:
+                    chat_states.pop(chat_id, None)
             except Exception as e:
                 await update.message.reply_text(f"⁉️ Failed to generate music: {e}")
         
         if chat_id in chat_states:
-            del chat_states[chat_id]
+            chat_states.pop(chat_id, None)
     
 
 def main():

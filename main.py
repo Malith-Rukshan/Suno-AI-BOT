@@ -65,7 +65,7 @@ async def generate(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     chat_id = update.effective_chat.id
     if chat_id in chat_states:
-        del chat_states[chat_id]
+        chat_states.pop(chat_id, None)
     await update.message.reply_text('Generation canceled. 🚫 You can start again with /generate.')
 
 # Handler for button presses

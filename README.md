@@ -2,6 +2,8 @@
 
 Welcome to the Suno AI Music Generator Bot! 🤖 This bot leverages the [Suno AI API](https://github.com/Malith-Rukshan/Suno-API) to generate custom music tracks based on user inputs directly within Telegram.
 
+✍️ Note : This is a **Very Basic Bot Example** demonstrating how to use the [Suno AI API](https://github.com/Malith-Rukshan/Suno-API).
+
 [![PyPI Package](https://img.shields.io/badge/PyPi-Library-1cd760?logo=pypi&style=flat)](https://pypi.org/project/SunoAI/)
 [![Suno-AI Github](https://img.shields.io/badge/Github-Suno--API-blue?logo=github&style=flat)](https://github.com/Malith-Rukshan/Suno-API)
 [![Updates Telegram Channel](https://img.shields.io/badge/Updates-@SunoAPI-blue?logo=telegram&style=flat)](https://t.me/SunoAPI)
